@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Request Form</title>
+</head>
+<body bgcolor="pink">
+        <h2>Appointment Request Form</h2>
+        <fieldset>
+        <legend>Your Basic Details</legend>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Appoinment Details</legend>
+            <label for="appointment-for">Appointment For:</label>
+            <select id="appointment-for" name="appointment-for">
+                <option>Select</option>
+                <option>General Checkup</option>
+                <option>Follow-up</option>
+                <option>New Patient</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <label for="appointment-description">Appointment Description:</label>
+            <textarea id="appointment-description" name="appointment-description"></textarea><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br><br>
+
+            <label for="duration">Duration (in minutes):</label>
+            <label><input type="radio" id="duration" name="duration">30</label>
+            <label><input type="radio" id="duration" name="duration">60</label>
+            <label><input type="radio" id="duration" name="duration">90</label>
+            <label><input type="radio" id="duration" name="duration">more</label><br><br>
+            <button type="submit">Request Appointment</button><br><br>
+        </form>
+    </fieldset>
+</body>
+</html>

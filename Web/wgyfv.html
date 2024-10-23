@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Request Form</title>
+</head>
+<body bgcolor="pink">
+        <h2>Appointment Request Form</h2>
+        <form>
+            <h3>Your Basic Details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number"><br><br>
+
+            <h3>Appointment Details</h3>
+            <label for="appointment-for">Appointment For:</label>
+            <select id="appointment-for" name="appointment-for">
+                <option value="">Select an option</option>
+                <option value="General Checkup">General Checkup</option>
+                <option value="Follow-up">Follow-up</option>
+                <option value="New Patient">New Patient</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="appointment-description">Appointment Description:</label>
+            <textarea id="appointment-description" name="appointment-description"></textarea><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br><br>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration"><br><br>
+
+            <button type="submit">Request Appointment</button><br><br>
+        </form>
+</body>
+</html>

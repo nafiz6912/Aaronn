@@ -1,0 +1,14 @@
+/* This is the external CSS file */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    
+}
+
+h1 {
+    color: darkblack;
+}
+
+p {
+    color: black;
+}
