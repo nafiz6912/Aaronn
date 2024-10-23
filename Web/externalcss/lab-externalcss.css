@@ -1,0 +1,17 @@
+
+
+          body{
+             background-color:lightblue;}
+            h1 {text-align: center;
+                color: red;}
+           h2{text-align: center;
+                color: blue;}
+            #p1{
+             font-family:franklingothic;
+              font-size:24px;
+             color: violet;}
+            .p2{
+             font-family:Constantia;
+              font-size:22px;
+             color: white;}
+            
