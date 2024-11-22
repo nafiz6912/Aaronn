@@ -1,0 +1,17 @@
+<html>
+<body bgcolor="pink">
+<h1>PLACES</h1>
+<p id="demo"></p>
+<script>
+var place,text,fLen,i;
+place=["Areekkal Waterfalls","Bastion Bunglow","Bhoothathankettu","Bolghatty palace","Chendamangalam","Cherai Beach","Chottanikkara Temple","Dutch Palace","Hill Palace","Kalady"];
+fLen =place.length;
+text="<ol>";
+for(i=0;i<fLen;i++) {
+ text+="<li>"+place[i]+"</li>";
+}
+text+="</ol>";
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>
