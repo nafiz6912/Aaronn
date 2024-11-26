@@ -1,0 +1,39 @@
+<html>
+<head>
+    
+    <title>Date Validation Example</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="dateInput">Enter Date (YYYY-MM-DD): </label>
+    <input type="text" id="dateInput">
+    <button onclick="validateDate()">Validate Date</button>
+    <p id="result"></p>
+
+    <script>
+        function validateDate() {
+            // Get the user input
+            var userInput = document.getElementById('dateInput').value;
+
+            // Define a regular expression for the date format YYYY-MM-DD
+            var datePattern = /^\d{4}-\d{2}-\d{2}$/;
+
+            // Check if the input matches the pattern
+            if (datePattern.test(userInput)) {
+                document.getElementById('result').innerText = 'Valid date format!';
+            } else {
+                document.getElementById('result').innerText = 'Invalid date format. Please enter in YYYY-MM-DD format.';
+            }
+        }
+    </script>
+
+</body>
+</html>

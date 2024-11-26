@@ -1,0 +1,78 @@
+<html>
+<body>
+
+    <form name="student_reg" method="POST" onsubmit="return validateForm()">
+            <p>NAME:</p>
+            <input type="text" name="name" value="" >
+            <p id="name_error"></p>
+
+            <p>EMAIL:</p>
+            <input type="text" name="email" value="" >
+            <p id="email_error"></p>
+
+            <p>USERNAME:</p>
+            <input type="text" name="username" value="" >
+            <p id="username_error"></p>
+
+            <p>PASSWORD:</p>
+            <input type="password" name="password" value="" >
+            <p id="password_error"></p>
+
+            <p>ROLL NO:</p>
+            <input type="number" name="roll_no" value="" >
+            <p id="roll_no_error"></p>
+            <br/>
+            <br/>
+            <br/>
+
+            <input type="submit" name="submit" value="submit">
+
+</form>
+</body>
+<script>
+function validateForm() {
+ var a = document.forms["student_reg"]["name"].value;
+ document.getElementById('name_error').innerHTML = '';
+ if (a == null || a == "") {
+     // alert("Name must be filled out");
+     
+     document.getElementById('name_error').innerHTML = 'Name must be filled out';
+     return false;
+ }
+
+ var b = document.forms["student_reg"]["email"].value;
+ document.getElementById('email_error').innerHTML = '';
+ if (b == null || b == "") {
+     // alert("Email must be filled out");
+     
+     document.getElementById('email_error').innerHTML = 'Email must be filled out';
+     return false;
+ }
+
+ var c = document.forms["student_reg"]["username"].value;
+ document.getElementById('username_error').innerHTML = '';
+ if (c == null || c == "") {
+     // alert("Username must be filled out");
+     
+     document.getElementById('username_error').innerHTML = 'Username must be filled out';
+     return false;
+ }
+ var d = document.forms["student_reg"]["password"].value;
+document.getElementById('password_error').innerHTML = '';
+if (d == null || d == "") {
+ // alert("Password must be filled out");
+ 
+ document.getElementById('password_error').innerHTML = 'Password must be filled out';
+ return false;
+}
+
+var e = document.forms["student_reg"]["roll_no"].value;
+document.getElementById('roll_no_error').innerHTML = '';
+if (e == null || e == "") {
+ // alert("Roll no must be filled out");
+ 
+ document.getElementById('roll_no_error').innerHTML = 'Roll no must be filled out';
+ return false;
+}
+}
+ </script>

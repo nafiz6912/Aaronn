@@ -1,0 +1,39 @@
+<html>
+<head>
+    
+    <title>URL Validation Example</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="urlInput">Enter URL: </label>
+    <input type="text" id="urlInput">
+    <button onclick="validateURL()">Validate URL</button>
+    <p id="result"></p>
+
+    <script>
+        function validateURL() {
+            // Get the user input
+            var userInput = document.getElementById('urlInput').value;
+
+            // Define a regular expression for URL validation
+            var urlPattern = /^(https?:\/\/)?([\w.-]+)\.([a-z]{2,})(\/\S*)?$/i;
+
+            // Check if the input matches the URL pattern
+            if (urlPattern.test(userInput)) {
+                document.getElementById('result').innerText = 'Valid URL!';
+            } else {
+                document.getElementById('result').innerText = 'Invalid URL. Please enter a valid URL.';
+            }
+        }
+    </script>
+
+</body>
+</html>

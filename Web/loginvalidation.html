@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> LOGIN </title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+</style>
+<script language="javascript">
+function validate()
+{
+var user=document.f1.username.value;
+var pass=document.f1.pass.value;
+if(user==""||pass=="")
+{
+window.alert("please fill the fields");
+}
+else if(user.length<9||pass.length<9)
+{
+window.alert("please enter the valid username and password");
+}
+else
+{
+window.alert("successfully logged.");
+}
+}
+</script>
+</head>
+<body bgcolor="pink"> 
+<h1 align="center"><b>LOGIN FORM</b></h1>
+<form name="f1"  >
+ <table>
+<tr>
+<td><label>username:</label></td> 
+<td><input type="text" placeholder="username" name="username" value=""></td>
+</tr>  
+<tr>
+<td><label>Password</label></td> 
+<td><input type="password" placeholder="Enter Password" name="pass" value=""></td>
+</tr>   
+<tr>
+<td>
+<input type=button name="submit" value="submit" onclick="validate()" ></td>
+</tr><br> 
+</table> 
+</form>
+</body>
+</html>
