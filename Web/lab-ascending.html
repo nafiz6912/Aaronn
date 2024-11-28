@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>sort an array in descending order</h2>
+<p>Click the button to sort the array in descending order.</p>
+<button onclick="myFunction()">Click here</button>
+<p id="demo"></p>
+<script>
+var array = ["Rose","Jasmine","Tulip","Orchid"];
+document.getElementById("demo").innerHTML = array;
+function myFunction() {
+array.sort();
+array.reverse();
+document.getElementById("demo").innerHTML = array;
+}
+</script>
+</body>
+</html>

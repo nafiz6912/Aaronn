@@ -1,0 +1,154 @@
+<script>
+    function validateform()
+    {
+    var fname = document.myform.afname.value;
+    var lname = document.myform.alname.value;
+    var dob = document.myform.abdate.value;
+    var adrs = document.myform.adrs.value;
+    var pnum = document.myform.amobile.value;
+    var edu = document.myform.edu.value;
+    var eml = document.myform.emil.value;
+    var pass = document.myform.pass.value;
+    var rpass = document.myform.rpass.value;
+    var atposition=eml.indexOf("@"); 
+    var dotposition=eml.lastIndexOf("."); 
+    if(fname==""||fname==null)
+    {
+        alert("first name must be filled out");
+        document.forms["myform"]["afname"].focus();
+        return false;
+    }
+    if(lname==""||lname==null)
+    {
+        alert("last name must be filled out");
+        document.forms["myform"]["alname"].focus();
+        return false;
+    }
+    if(dob==""||dob==null)
+    {
+        alert("dob must be filled out");
+        document.forms["myform"]["abdate"].focus();
+        return false;
+    }
+    if(adrs==""||adrs==null)
+    {
+        alert("adrs must be filled out");
+        document.forms["myform"]["adrs"].focus();
+        return false;
+    }
+    if(pnum==""||pnum==null)
+    {
+        alert("phone number must be filled out");
+        document.forms["myform"]["amobile"].focus();
+        return false;
+    }
+    if(edu==""||edu==null)
+    {
+        alert("education must be filled out");
+        document.forms["myform"]["edu"].focus();
+        return false;
+    }
+    if(eml==""||eml==null)
+    {
+        alert("email must be filled out");
+        document.forms["myform"]["emil"].focus();
+        return false;
+    }
+    if(pass==""||pass==null)
+    {
+        alert("password must be filled out");
+        document.forms["myform"]["pass"].focus();
+        return false;
+    }
+    if(rpass==""||rpass==null)
+    {
+        alert("first name must be filled out");
+        document.forms["myform"]["rpass"].focus();
+        return false;
+    }
+    if(pass.length<6)
+    {
+        alert("password should be greater than 6")
+        document.forms["myform"]["pass"].focus();
+        return false;
+    }
+    if(pass!=rpass)
+    {
+        alert("password must be same");
+        document.forms["myform"]["rpass"].focus();
+        return false;
+    }
+    if(isNaN(pnum))
+    {
+        alert("phone number must be a number");
+        document.forms["myform"]["amobile"].focus();
+        return false;
+    }
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=w.length){  
+    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+    return false;  
+  } 
+     }
+
+</script>
+<body>
+
+<form name="myform" method="post" onsubmit="return validateform()" >          
+   <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="afname"><br/><br/></td> 
+        </tr> 
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="alname"><br/><br/></td>
+    </tr>
+    <tr>
+        <td>DOB:</td>
+        <td><input type="date" name="abdate"><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td><input type="radio" name ="gender1" value="male">Male<input type="radio" name="gender1" value="female">Female<br/><br/></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><textarea name="adrs" rows="7" cols="25"></textarea><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Mobile Number:</td>
+    <td><input type="text" name="amobile" malength="10"><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Education:</td>
+    <td><select name="edu">
+        <option value="ug">UG</option>
+        <option value="pg">PG</option>
+    </select><br/><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Hobbies:</td>
+        <td><input type="checkbox" name="cricket">cricket
+            <input type="checkbox" name="football">Football
+            <input type="checkbox" name="reading">Reading
+        <br/><br/></td>
+
+    </tr>
+    <tr>
+        <td>Email:</td>
+    <td><input type="text" name="emil"><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+    <td><input type="password" name="pass"><br/><br/></td>
+    </tr>
+    <tr>
+        <td>Retype Password:</td>
+    <td><input type="password" name="rpass" ><br/><br/></td>
+    </tr>
+    <tr></tr></br></br>
+    <td><input type="submit" value="register"></td> 
+</tr> 
+   </table>
+    </form> 
+ </body>
