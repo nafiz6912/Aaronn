@@ -1,0 +1,48 @@
+<html>      
+    <title>Registration Form</title>  
+    <link rel="stylesheet" href="registration.css"> 
+<body>  
+    <div class="container">  
+        <h2>Register Here</h2>  
+        <form action="registration.php" method="POST">  
+            <b>First Name</b> 
+            <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required> 
+            
+            <b>Last Name</b>  
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required>  
+            
+            <b>Email</b> 
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>  
+ 
+            <b>Password</b> 
+            <input type="password" id="pass" name="pass" placeholder="Enter Password" required>  
+  
+            <b>Repeat Password</b> 
+            <input type="password" id="psw-repeat" name="psw-repeat" placeholder="Repeat Password" required>  
+
+            <b>Contact</b> 
+            <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="Enter Contact Number" required>  
+ 
+            <b>Gender</b>
+            <select id="gender" name="gender" required>  
+                <option value="male">Male</option>  
+                <option value="female">Female</option>  
+                <option value="other">Other</option>  
+            </select>  
+  
+            <input type="submit" name="submit" value="Register"> 
+        </form>  
+    </div>  
+</body>  
+</html>  
+
+
+
+
+
+
+
+
+
+
+
