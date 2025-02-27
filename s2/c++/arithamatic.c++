@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     char operation;
-    double num1,num2,resut;
+    double num1,num2,reslut;
 
 
     cout << "arithmatic calculator  " ;
